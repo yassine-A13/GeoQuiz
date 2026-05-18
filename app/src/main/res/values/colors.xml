@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Material 3 Light Palette -->
+    <color name="primary">#4F46E5</color>
+    <color name="onPrimary">#FFFFFF</color>
+    <color name="primaryContainer">#E0E7FF</color>
+    <color name="onPrimaryContainer">#312E81</color>
+
+    <color name="secondary">#10B981</color>
+    <color name="onSecondary">#FFFFFF</color>
+    <color name="secondaryContainer">#D1FAE5</color>
+    <color name="onSecondaryContainer">#064E3B</color>
+
+    <color name="tertiary">#8B5CF6</color>
+    <color name="onTertiary">#FFFFFF</color>
+    <color name="tertiaryContainer">#EDE9FE</color>
+    <color name="onTertiaryContainer">#4C1D95</color>
+
+    <color name="error">#EF4444</color>
+    <color name="onError">#FFFFFF</color>
+    <color name="errorContainer">#FEE2E2</color>
+    <color name="onErrorContainer">#991B1B</color>
+
+    <color name="background">#F9FAFB</color>
+    <color name="onBackground">#111827</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="onSurface">#1F2937</color>
+    <color name="surfaceVariant">#F3F4F6</color>
+    <color name="onSurfaceVariant">#4B5563</color>
+    <color name="outline">#D1D5DB</color>
+
+    <!-- Legacy Compatibility Mappings for Java Code -->
+    <!-- QuizActivity.java uses these colors specifically -->
+    <color name="teal_200">#C7D2FE</color> <!-- Light Indigo for selected state -->
+    <color name="purple_500">#FFFFFF</color> <!-- White for default button background -->
+    <color name="primary_dark">#3730A3</color>
+    <color name="accent">#10B981</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="bg_light">#F9FAFB</color>
+    <color name="text_main">#111827</color>
+    <color name="text_sec">#6B7280</color>
+</resources>

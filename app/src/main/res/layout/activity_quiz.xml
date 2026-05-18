@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <!-- Loading State -->
+    <LinearLayout
+        android:id="@+id/loadingLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.progressindicator.CircularProgressIndicator
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminate="true"
+            app:indicatorSize="64dp"
+            app:trackThickness="6dp"
+            app:indicatorColor="@color/primary" />
+
+        <TextView
+            android:id="@+id/statusTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="Obtention de la localisation..."
+            android:textColor="@color/onBackground"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="L'intelligence artificielle prépare vos questions"
+            android:textColor="@color/onSurfaceVariant"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <!-- Quiz Content -->
+    <LinearLayout
+        android:id="@+id/quizLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <com.google.android.material.card.MaterialCardView
+            style="@style/Widget.Material3.CardView.Elevated"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="32dp"
+            app:cardCornerRadius="24dp"
+            app:contentPadding="24dp">
+
+            <TextView
+                android:id="@+id/questionTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-bold"
+                android:lineSpacingExtra="4dp"
+                android:text="Texte de la question"
+                android:textColor="@color/onSurface"
+                android:textSize="22sp" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/optionA"
+            style="@style/Widget.GeoQuiz.OptionButton"
+            android:text="Option A" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/optionB"
+            style="@style/Widget.GeoQuiz.OptionButton"
+            android:text="Option B" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/optionC"
+            style="@style/Widget.GeoQuiz.OptionButton"
+            android:text="Option C" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/optionD"
+            style="@style/Widget.GeoQuiz.OptionButton"
+            android:text="Option D" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/nextButton"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:enabled="false"
+            android:text="Suivant"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:cornerRadius="16dp"
+            app:icon="@android:drawable/ic_media_next"
+            app:iconGravity="textEnd" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

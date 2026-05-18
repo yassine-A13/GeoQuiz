@@ -1,0 +1,20 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme (Material 3 Night) -->
+    <style name="Theme.GeoQuiz_Cheraa" parent="Theme.Material3.Dark.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">#C7D2FE</item>
+        <item name="colorOnPrimary">#1E1B4B</item>
+        <item name="colorPrimaryContainer">#312E81</item>
+        <item name="colorOnPrimaryContainer">#E0E7FF</item>
+
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">#6EE7B7</item>
+        <item name="colorOnSecondary">#064E3B</item>
+
+        <item name="android:statusBarColor">#111827</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:navigationBarColor">#111827</item>
+
+        <item name="android:windowBackground">#111827</item>
+    </style>
+</resources>
